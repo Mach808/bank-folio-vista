@@ -36,7 +36,7 @@ const Transfer = () => {
 
     toast({
       title: "Transfer Successful!",
-      description: `$${amount} has been transferred successfully.`,
+      description: `₹${amount} has been transferred successfully.`,
     });
 
     // Reset form
@@ -68,8 +68,8 @@ const Transfer = () => {
                       <SelectValue placeholder="Select account" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="savings">Savings - ****7890 ($45,320.50)</SelectItem>
-                      <SelectItem value="current">Current - ****4321 ($12,850.00)</SelectItem>
+                      <SelectItem value="savings">Savings - ****7890 (₹38,45,320.50)</SelectItem>
+                      <SelectItem value="current">Current - ****4321 (₹10,85,000.00)</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -81,15 +81,15 @@ const Transfer = () => {
                       <SelectValue placeholder="Select beneficiary" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="john">John Doe - Bank of America</SelectItem>
-                      <SelectItem value="jane">Jane Smith - Chase Bank</SelectItem>
-                      <SelectItem value="bob">Bob Wilson - Wells Fargo</SelectItem>
+                      <SelectItem value="rajesh">Rajesh Kumar - HDFC Bank</SelectItem>
+                      <SelectItem value="priya">Priya Sharma - ICICI Bank</SelectItem>
+                      <SelectItem value="amit">Amit Patel - State Bank of India</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="amount">Amount ($)</Label>
+                  <Label htmlFor="amount">Amount (₹)</Label>
                   <Input
                     id="amount"
                     type="number"
@@ -130,17 +130,17 @@ const Transfer = () => {
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Amount</span>
-                  <span className="font-semibold">${amount || "0.00"}</span>
+                  <span className="font-semibold">₹{amount || "0.00"}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Transfer Fee</span>
-                  <span className="font-semibold text-success">$0.00</span>
+                  <span className="font-semibold text-success">₹0.00</span>
                 </div>
                 <div className="border-t pt-2">
                   <div className="flex justify-between">
                     <span className="font-semibold">Total</span>
                     <span className="text-xl font-bold text-primary">
-                      ${amount || "0.00"}
+                      ₹{amount || "0.00"}
                     </span>
                   </div>
                 </div>

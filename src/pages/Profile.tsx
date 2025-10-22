@@ -24,17 +24,17 @@ const Profile = () => {
             <CardContent className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="fullname">Full Name</Label>
-                <Input id="fullname" defaultValue="John Anderson" />
+                <Input id="fullname" defaultValue="Arjun Mehta" />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="email">Email Address</Label>
-                <Input id="email" type="email" defaultValue="john.anderson@email.com" />
+                <Input id="email" type="email" defaultValue="arjun.mehta@email.com" />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="phone">Phone Number</Label>
-                <Input id="phone" type="tel" defaultValue="+1 (555) 123-4567" />
+                <Input id="phone" type="tel" defaultValue="+91 98765 43210" />
               </div>
 
               <Button>Save Changes</Button>

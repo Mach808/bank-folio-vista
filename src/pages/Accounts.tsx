@@ -14,7 +14,7 @@ const mockAccounts = [
   {
     id: 1,
     accountType: "Savings",
-    balance: 45320.50,
+    balance: 3845320.50,
     accountNumber: "1234567890",
     status: "Active",
     createdAt: "2023-01-15",
@@ -22,7 +22,7 @@ const mockAccounts = [
   {
     id: 2,
     accountType: "Current",
-    balance: 12850.00,
+    balance: 1085000.00,
     accountNumber: "0987654321",
     status: "Active",
     createdAt: "2023-03-20",
@@ -72,7 +72,7 @@ const Accounts = () => {
                 
                 <div>
                   <p className="text-sm text-muted-foreground">Current Balance</p>
-                  <p className="text-3xl font-bold">${account.balance.toLocaleString()}</p>
+                  <p className="text-3xl font-bold">₹{account.balance.toLocaleString()}</p>
                 </div>
                 
                 <div className="flex items-center justify-between pt-2">

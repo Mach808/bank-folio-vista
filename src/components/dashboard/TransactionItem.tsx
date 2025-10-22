@@ -38,9 +38,9 @@ export const TransactionItem = ({ type, amount, description, timestamp, balanceA
       
       <div className="text-right">
         <p className={cn("text-lg font-semibold", isCredit ? "text-success" : "text-destructive")}>
-          {isCredit ? "+" : "-"}${amount.toLocaleString()}
+          {isCredit ? "+" : "-"}₹{amount.toLocaleString()}
         </p>
-        <p className="text-sm text-muted-foreground">Balance: ${balanceAfter.toLocaleString()}</p>
+        <p className="text-sm text-muted-foreground">Balance: ₹{balanceAfter.toLocaleString()}</p>
       </div>
     </div>
   );

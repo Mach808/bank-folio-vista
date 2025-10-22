@@ -31,7 +31,7 @@ export const AccountCard = ({ accountType, balance, accountNumber, status, trend
         <div className="space-y-4">
           <div>
             <p className="text-sm text-muted-foreground">Current Balance</p>
-            <p className="text-3xl font-bold text-foreground">${balance.toLocaleString()}</p>
+            <p className="text-3xl font-bold text-foreground">₹{balance.toLocaleString()}</p>
           </div>
           
           {trend && (

@@ -11,14 +11,14 @@ import heroBg from "@/assets/hero-bg.jpg";
 const mockAccounts = [
   {
     accountType: "Savings",
-    balance: 45320.50,
+    balance: 3845320.50,
     accountNumber: "1234567890",
     status: "Active",
     trend: { value: 12.5, isPositive: true },
   },
   {
     accountType: "Current",
-    balance: 12850.00,
+    balance: 1085000.00,
     accountNumber: "0987654321",
     status: "Active",
     trend: { value: 5.2, isPositive: true },
@@ -28,31 +28,31 @@ const mockAccounts = [
 const mockTransactions = [
   {
     type: "Credit" as const,
-    amount: 2500.00,
-    description: "Salary Deposit",
+    amount: 185000.00,
+    description: "Salary Credit",
     timestamp: "2025-10-20T10:30:00",
-    balanceAfter: 45320.50,
+    balanceAfter: 3845320.50,
   },
   {
     type: "Debit" as const,
-    amount: 150.00,
-    description: "Grocery Shopping",
+    amount: 12500.00,
+    description: "Big Bazaar Shopping",
     timestamp: "2025-10-19T15:45:00",
-    balanceAfter: 42820.50,
+    balanceAfter: 3660320.50,
   },
   {
     type: "Debit" as const,
-    amount: 85.50,
-    description: "Restaurant",
+    amount: 6850.00,
+    description: "Swiggy Order",
     timestamp: "2025-10-18T19:20:00",
-    balanceAfter: 42970.50,
+    balanceAfter: 3672820.50,
   },
   {
     type: "Credit" as const,
-    amount: 500.00,
+    amount: 45000.00,
     description: "Freelance Payment",
     timestamp: "2025-10-17T14:00:00",
-    balanceAfter: 43056.00,
+    balanceAfter: 3679670.50,
   },
 ];
 
@@ -78,7 +78,7 @@ const Dashboard = () => {
           <div className="mt-8 flex items-center gap-8">
             <div>
               <p className="text-sm opacity-80">Total Balance</p>
-              <p className="text-5xl font-bold">${totalBalance.toLocaleString()}</p>
+              <p className="text-5xl font-bold">₹{totalBalance.toLocaleString()}</p>
             </div>
             
             <Link to="/transfer">
@@ -110,7 +110,7 @@ const Dashboard = () => {
             <TrendingUp className="h-4 w-4 text-success" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-success">+$3,000</div>
+            <div className="text-2xl font-bold text-success">+₹2,30,000</div>
             <p className="text-xs text-muted-foreground">+18% from last month</p>
           </CardContent>
         </Card>
@@ -121,7 +121,7 @@ const Dashboard = () => {
             <Wallet className="h-4 w-4 text-destructive" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-destructive">-$235.50</div>
+            <div className="text-2xl font-bold text-destructive">-₹19,350</div>
             <p className="text-xs text-muted-foreground">-5% from last month</p>
           </CardContent>
         </Card>
